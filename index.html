@@ -253,7 +253,7 @@ function drawEarth(r,rot){
   ctx.beginPath();ctx.arc(0,0,r,0,Math.PI*2);ctx.fillStyle='#0d2a45';ctx.fill();
   ctx.save();ctx.beginPath();ctx.arc(0,0,r,0,Math.PI*2);ctx.clip();ctx.rotate(rot);
   const lc='#1a4a2e';
-  [[−10,−14,26,20],[20,−7,24,32],[−44,−12,20,28],[30,24,22,14]].forEach(([x,y,w,h])=>{
+  [[-10,-14,26,20],[20,-7,24,32],[-44,-12,20,28],[30,24,22,14]].forEach(([x,y,w,h])=>{
     ctx.beginPath();ctx.ellipse(x,y,w,h,0,0,Math.PI*2);ctx.fillStyle=lc;ctx.fill();
   });
   ctx.restore();
